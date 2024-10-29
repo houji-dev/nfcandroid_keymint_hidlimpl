@@ -15,10 +15,10 @@
 //
 
 cc_binary {
-    name: "android.hardware.authsecret-service.nxp",
+    name: "android.hardware.authsecret-service-nxp",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.authsecret-service.nxp.rc"],
-    vintf_fragments: ["android.hardware.authsecret-service.nxp.xml"],
+    init_rc: ["android.hardware.authsecret-service-nxp.rc"],
+    vintf_fragments: ["android.hardware.authsecret-service-nxp.xml"],
     vendor: true,
     srcs: [
         "service.cpp",
@@ -36,7 +36,7 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.se.omapi-V1-ndk",
-        "libjc_keymint_transport.nxp",
+        "libjc_keymint_transport_nxp",
         "libcppbor_external",
     ],
 }
